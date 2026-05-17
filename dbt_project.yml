@@ -37,3 +37,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   schamaxi_project:
+    staging:
+      +materialized: view
+      
+    marts:
+      +materialized: table
